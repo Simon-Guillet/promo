@@ -1,0 +1,291 @@
+$gris: #DEDEDE;
+$surface: #31A2C4;
+$peuProfond: #257A99;
+$profond: #1C5D71;
+$tresProfond: #0F3D54;
+
+
+@mixin image-placeholder{
+  background-color: $gris;
+  color: white;
+  display: block;
+  font-size: 2em;
+  padding: 30px;
+  text-align: center;
+}
+
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: $peuProfond;
+  a{
+    text-decoration: none;
+  }
+  .button{
+    color: white;
+    background-color: $profond;
+    border-radius: 10px;
+    transition: background-color 200ms;
+    &:hover{
+      transition: 200ms;
+      background-color: $tresProfond;
+    }
+  }
+  header{
+    background-color: $gris;
+    .icon{
+      display: none;
+      color: white;
+      font-size: 2em;
+      padding: 45px 60px;
+    }
+    nav{
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+      a{
+        color: white;
+        font-size: 2em;
+        padding: 15px 30px;
+        border-radius: 10px;
+        transition: background-color 200ms;
+        &:hover{
+          transition: 200ms;
+          background-color: $tresProfond;
+        }
+      }
+    }
+    @media (max-width:800px) {
+      .icon{
+        display: block;
+        background-color: $peuProfond;
+      }
+      nav{
+        display: none;
+        background-color: $peuProfond;
+      }
+      nav.responsive{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+      }
+    }
+    .presentation{
+      padding: 50px 100px 130px 100px;
+      @media (max-width: 800px) {
+        padding: 50px 30px 130px 30px;
+      }
+      h1{
+        text-transform: uppercase;
+        text-align: center;
+        margin: 30px 0;
+        img{
+          @media (max-width: 1000px) {
+            width: 100%;
+          }
+        }
+      }
+      h2{
+        text-transform: uppercase;
+        color: white;
+        text-shadow: #545454 3px 3px 6px;
+        text-align: center;
+        font-size: 2.1em;
+        font-weight: normal;
+        line-height: 1.4em;
+      }
+      .button{
+        font-size: 1.5em;
+        padding: 15px 60px;
+        text-align: center;
+        margin: 0 auto;
+        display: table;
+        text-transform: uppercase;
+        line-height: 1.3em;
+      }
+    }
+  }
+  section{
+    padding: 50px;
+  }
+  #surface{
+    background-color: $surface;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
+    .image-packaging{
+      @include image-placeholder;
+      padding: 120px 30px;
+    }
+    .lore{
+      p{
+        text-align: justify;
+        line-height: 1.5em;
+      }
+    }
+    @media (max-width: 800px) {
+      display: block;
+    }
+  }
+  #peuProfond{
+    background-color: $peuProfond;
+    .grille{
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      grid-gap: 50px;
+      li{
+        line-height: 1.5em;
+      }
+      .apercu-cartes{
+        @include image-placeholder;
+        padding: 80px 30px;
+      }
+      @media (max-width: 800px) {
+        display: block;
+      }
+    }
+    .plateau{
+      @include image-placeholder;
+      margin-top: 50px;
+      padding: 80px 30px;
+    }
+  }
+  #profond{
+    background-color: $profond;
+    text-align: center;
+    padding: 30px 50px 60px;
+    p{
+      padding-bottom: 30px;
+    }
+    .button{
+      background-color: transparent;
+      border: white solid 2px;
+      padding: 20px;
+      font-size: 1.7em;
+      transition: background-color 200ms;
+      &:hover{
+        transition: 200ms;
+        background-color: $tresProfond;
+      }
+      @media (max-width: 400px) {
+        font-size: 1.2em;
+      }
+    }
+  }
+  #tresProfond{
+    background-color: $tresProfond;
+    .pdf{
+      @include image-placeholder;
+      padding: 150px 30px;
+    }
+  }
+  #panier{
+    background-color: $surface;
+    h2{
+
+    }
+    form {
+      .commande {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        .image-packaging {
+          @include image-placeholder;
+          padding: 120px 30px;
+          margin: 10px 0;
+        }
+
+        .article {
+          font-size: 2em;
+        }
+
+        .nombre {
+          display: flex;
+
+          .QuantitySelect {
+            border: black 1px solid;
+            border-radius: 50px;
+            padding: 10px;
+          }
+
+          .prix {
+            padding: 10px;
+          }
+        }
+
+        .quit {
+          color: black;
+        }
+      }
+
+      #acheter {
+        background-color: white;
+        color: black;
+        padding: 10px 30px;
+        border-radius: 50px;
+        height: min-content;
+        border: none;
+        margin-top: 20px;
+      }
+    }
+  }
+  footer{
+    background-color: black;
+    padding: 50px;
+    a{
+      color: white;
+    }
+    nav{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      a{
+        font-size: 1.3em;
+      }
+    }
+    .grille{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      ul{
+        list-style-type: none;
+        padding: 0;
+      }
+      .reseaux{
+        img{
+          width: 50px;
+          border-radius: 10px;
+        }
+      }
+    }
+    .info{
+      text-align: center;
+      margin: 2em 0 3em;
+      line-height: 1.3em;
+    }
+    .logo{
+      display: block;
+      margin: 30px auto 0;
+      width: 200px;
+    }
+    @media (max-width: 640px) {
+      nav{
+        flex-direction: column;
+        line-height: 2em;
+      }
+      .grille{
+        display: block;
+        ul{
+          line-height: 1.3em;
+        }
+      }
+    }
+  }
+}
