@@ -141,6 +141,7 @@ body #peuProfond .grille .apercu-cartes #cartes-slider img {
   margin: auto 5px;
   width: 130px;
   border-radius: 8px;
+  transition: 0.25s;
 }
 body #peuProfond .grille .apercu-cartes #cartes-slider img:hover {
   box-shadow: yellow 0 0 20px;
@@ -151,15 +152,9 @@ body #peuProfond .grille .apercu-cartes #cartes-slider img:hover {
     display: block;
   }
 }
-body #peuProfond .plateau {
-  background-color: #DEDEDE;
-  color: white;
-  display: block;
-  font-size: 2em;
-  padding: 30px;
-  text-align: center;
+body #peuProfond #plateau {
   margin-top: 50px;
-  padding: 80px 30px;
+  width: 100%;
 }
 body #profond {
   background-color: #1C5D71;

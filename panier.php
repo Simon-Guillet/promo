@@ -26,7 +26,6 @@
             <a href="panier.php" class="button">Acheter</a>
         </nav>
     </header>
-
     <section id="panier">
         <h2>Panier</h2>
         <form method="post" action="panier.php">
@@ -44,7 +43,6 @@
             <input type="submit" value="acheter" name="Acheter" id="acheter">
         </form>
     </section>
-
     <footer>
         <nav>
             <a href="panier.php">Acheter</a>
@@ -68,8 +66,8 @@
             </div>
             <div class="langue">
                 <p>Langue : </p>
-                <a href="index.php"><img src="assets/img/france.png" alt="Français"></a>
-                <a href="english.php"><img src="assets/img/united-kingdom.png" alt="English"></a>
+                <a href="?lang=fr"><img src="assets/img/france.png" alt="Français"></a>
+                <a href="?lang=en"><img src="assets/img/united-kingdom.png" alt="English"></a>
             </div>
         </div>
         <p class="info">

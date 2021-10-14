@@ -1,3 +1,75 @@
+<?php
+if (!isset($_GET['lang'])){
+    $lang="";
+} else {
+    $lang=$_GET['lang'];
+}
+
+$frHeader=["Jeu en ligne","Jeu physique","Nous contacter","Acheter","La Conquête du Monde à portée de nageoires","Essayer le jeu en ligne"];
+$enHeader=["Online Game","Physical Game","Contact Us","Purchase","World Domination within the Reach of your Fins","Try the online Game"];
+
+$frSurface=['<h3>Plutôt requin ou dauphin ? Choisis ton camp !</h3>
+            <p>Les requins et les dauphins, après s’être débarrassé de l’espèce humaine qui polluait les océans, se livrent une guerre sans merci pour le contrôle de la Terre et la survie de leur espèce !
+                Dans ce monde situé dans un lointain futur, commande une équipe de 10 requins ou dauphins chacun avec un type qui leur est propre mais tous armés jusqu’aux ailerons et détruis le camp adverse pour gagner la partie.
+            </p>
+            <h3>Description</h3>
+            <p>Le jeu se joue à deux joueurs. Chacun d’entre vous contrôle 10 requin ou dauphin de type
+                force, rapidité ou intelligence et de niveau variable (allant de 1 à 3) pour defendre votre ville et attaquer celle du camp adverse.
+                Lancez les dés et déplacez vos personnages à travers l’Océan Pacifique pour arriver à la ville ennemie. Si vos personnages croise le chemin d’un/des personnages du
+                joueur adverse, un combat démarre alors et c’est là que les types entrent en jeu. Si l’étau se resserre, votre Leader se chargera alors personnellement de faire avancer vos troupes en gagnant les combats les plus difficiles. Pour que votre espèce triomphe et gagne la guerre pour le contrôle de la Terre, vous devrez détruire la ville adverse en premier ou éradiquer
+                toutes les troupes ennemies.
+            </p>'];
+$enSurface=['<h3>Shark, Dolphin? The choice is yours!</h3>
+        <p>
+            After getting rid of those pesky ocean-polluting humans, a merciless conflict for world domination and safeguarding of the race sparked between sharks and dolphins, the two species who now rule over the world.
+            In this apocalyptic yet distant future, you will be tasked to lead a team of 10 excentric sharks or dolphins across the battlefield. Each of them have varying abilities and strenght but one thing’s for certain : They are all Fin-ly equipped to lay waste to their enemies and assert their dominance over Planet Earth (Conveniently renamed Planet Sea).        </p>
+        <h3>Summary</h3>
+        <p>
+            The game is designed for two players. Each of them controls 10 shark or dolphin characters of three different types and levels: Gait, Bait or Grit going from level 1 to 3.
+            Master these types and use them strategically to both defend your homeland and destroy the enemies to win the game.
+            Throw the dices and launch your characters across the Pacific to reach the enemy’s Capitol. If one of your units meets your opponent’s creatures, a battle begins and that’s where types come into play. If the going gets tough, you can assign your leader to take matters into their own fins and win the most challenging battles. For your specie to triumph and gain control over the planet, you will have to either take the enemy’s city before they take yours or simply eradicate every enemy unit standing on your path to glory.
+        </p>'];
+
+$frPeuProfond=['<p>Une boîte de jeu comprend :</p>
+                <ul>
+                    <li>10 cartes requin et 10 cartes dauphin</li>
+                    <li>11 cartes « plateau de jeu »</li>
+                    <li>1 dépliant « Règles du jeu »</li>
+                    <li>3 dés de couleur pour la force (rouge), la rapidité (vert) et l’intelligence (bleu) avec chacun 2 faces « 1 », 2 faces « 2 » et 2 faces « 3 ».</li>
+                </ul>','Les Cartes'];
+$enPeuProfond=['<p>One Pack of Supremasea contains :</p>
+            <ul>
+                <li>10 ‘’shark’’ cards and 10 ‘’dolphin’’ cards</li>
+                <li>11 ’’battlefield’’ tiles</li>
+                <li>1  flyer for the rules of the game</li>
+                <li>3 coloured dices corresponding to Grit (red) Bait (blue) and Gait (green), each with 2 sides with 1 pip, 2 sides with 2 pip and 2 sides with 3 pip</li>
+            </ul>','The Cards'];
+
+$frProfond=['Inscrivez vous à notre newsletter pour ne manquer aucune information.','Votre adresse mail','Inscription newsletter'];
+$enProfond=['Subscribe to our Newsletter to never miss any informations.','your e-mail address','Newsletter Subscription'];
+
+$frTresProfond=['Des PDF/Flyers ou Affiches téléchargeables'];
+$enTresProfond=['Downloadables PDF/Flyers or Posters'];
+
+$frFooter=['Acheter','Jeu en ligne','Contact','Revenir au sommet','Service consommateurs','Politique de confidentialité','Termes Et Conditions d\'utilisation','Cookies','Politique de divulgation responsable','Réseaux sociaux : ','Langue : ','© 2021 Mascav. Tous droits réservés. Tout le contenu audio, visuel et textuel de ce site (y compris tous les noms, personnages, images et logo) est protégé par les droits d\'auteur et autres droits de propriété intellectuelle détenus par Mascav.'];
+$enFooter=['Puchase','Online Game','Contact','Back to the top','Customer services','Privacy policy','Terms of Use','Cookies','Responsible Disclosure Policy','Social Medias :','Language : ','© 2021 Mascav. All rights reserved. Every content, be it audio,visual or textual, found on this website (Names, characters, images and logos included) are subjected to copyrights and other intellectual property rights held by Mascav.'];
+
+if ($lang==="en") {
+    $header=$enHeader;
+    $surface=$enSurface;
+    $peuProfond=$enPeuProfond;
+    $profond=$enProfond;
+    $tresProfond=$enTresProfond;
+    $footer=$enFooter;
+} else {
+    $header=$frHeader;
+    $surface=$frSurface;
+    $peuProfond=$frPeuProfond;
+    $profond=$frProfond;
+    $tresProfond=$frTresProfond;
+    $footer=$frFooter;
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,46 +91,30 @@
             <i class="fa fa-bars"></i>
         </a>
         <nav class="topnav" id="myTopnav">
-            <a href="">Jeu en ligne</a>
-            <a href="">Jeu physique</a>
-            <a href="">Nous contacter</a>
-            <a href="panier.php" class="button">Acheter</a>
+            <a href=""><?php echo $header[0]?></a>
+            <a href=""><?php echo $header[1]?></a>
+            <a href=""><?php echo $header[2]?></a>
+            <a href="panier.php" class="button"><?php echo $header[3]?></a>
         </nav>
         <div class="presentation">
             <h1><img src="assets/img/logo_v7.png" alt="SupremaSea"></h1>
-            <h2>La Conquête du Monde à portée de nageoires</h2>
-            <a href="" class="button">Essayer le jeu en ligne</a>
+            <h2><?php echo $header[4]?></h2>
+            <a href="" class="button"><?php echo $header[5]?></a>
         </div>
     </header>
     <section id="surface">
         <img class="image-packaging" src="assets/img/packshotf.jpg" alt="packaging">
         <div class="lore">
-            <h3>Plutôt requin ou dauphin ? Choisis ton camp !</h3>
-            <p>Les requins et les dauphins, après s’être débarrassé de l’espèce humaine qui polluait les océans, se livrent une guerre sans merci pour le contrôle de la Terre et la survie de leur espèce !
-                Dans ce monde situé dans un lointain futur, commande une équipe de 10 requins ou dauphins chacun avec un type qui leur est propre mais tous armés jusqu’aux ailerons et détruis le camp adverse pour gagner la partie.
-            </p>
-            <h3>Description</h3>
-            <p>Le jeu se joue à deux joueurs. Chacun d’entre vous contrôle 10 requin ou dauphin de type
-                force, rapidité ou intelligence et de niveau variable (allant de 1 à 3) pour defendre votre ville et attaquer celle du camp adverse.
-                Lancez les dés et déplacez vos personnages à travers l’Océan Pacifique pour arriver à la ville ennemie. Si vos personnages croise le chemin d’un/des personnages du
-                joueur adverse, un combat démarre alors et c’est là que les types entrent en jeu. Si l’étau se resserre, votre Leader se chargera alors personnellement de faire avancer vos troupes en gagnant les combats les plus difficiles. Pour que votre espèce triomphe et gagne la guerre pour le contrôle de la Terre, vous devrez détruire la ville adverse en premier ou éradiquer
-                toutes les troupes ennemies.
-            </p>
+            <?php echo $surface[0]?>
         </div>
     </section>
     <section id="peuProfond">
         <div class="grille">
             <div class="liste">
-                <p>Une boîte de jeu comprend :</p>
-                <ul>
-                    <li>10 cartes requin et 10 cartes dauphin</li>
-                    <li>11 cartes « plateau de jeu »</li>
-                    <li>1 dépliant « Règles du jeu »</li>
-                    <li>3 dés de couleur pour la force (rouge), la rapidité (vert) et l’intelligence (bleu) avec chacun 2 faces « 1 », 2 faces « 2 » et 2 faces « 3 ».</li>
-                </ul>
+                <?php echo $peuProfond[0]?>
             </div>
             <div class="apercu-cartes">
-                <h3>Les Cartes</h3>
+                <h3><?php echo $peuProfond[1]?></h3>
                 <div id="cartes-slider">
                     <img src="assets/img/cartes/delphine.png" alt="Delphine">
                     <img src="assets/img/cartes/la_dent_de_la_mer.png" alt="La dent de la mer">
@@ -70,51 +126,49 @@
             </div>
         </div>
 
-        <div class="plateau">
-            Plateau de jeu intégré
-        </div>
+        <img src="assets/img/cartes/plateau.jpg" alt="Plateau" id="plateau">
     </section>
     <section id="profond">
-        <p>Inscrivez vous à notre newsletter pour ne manquer aucune information.</p>
+        <p><?php echo $profond[0]?></p>
         <form action="index.php">
-            <input type="email" name="E-mail" id="mail" placeholder="Votre adresse mail">
-            <input type="submit" class="button" name="Inscription newsletter" value="Inscription newsletter">
+            <input type="email" name="E-mail" id="mail" placeholder="<?php echo $profond[1]?>">
+            <input type="submit" class="button" name="Inscription newsletter" value="<?php echo $profond[2]?>">
         </form>
     </section>
     <section id="tresProfond">
         <div class="pdf">
-            Des PDF/Flyers ou Affiches téléchargeables
+            <?php echo $tresProfond[0]?>
         </div>
     </section>
     <footer>
         <nav>
-            <a href="panier.php">Acheter</a>
-            <a href="">Jeu en ligne</a>
-            <a href="">Contact</a>
-            <a href="#">Revenir au sommet</a>
+            <a href="panier.php"><?php echo $footer[0]?></a>
+            <a href=""><?php echo $footer[1]?></a>
+            <a href=""><?php echo $footer[2]?></a>
+            <a href="#"><?php echo $footer[3]?></a>
         </nav>
         <div class="grille">
             <ul>
-                <li><a href="">Service consommateurs</a></li>
-                <li><a href="">Politique de confidentialité</a></li>
-                <li><a href="">Termes Et Conditions d'utilisation</a></li>
-                <li><a href="">Cookies</a></li>
-                <li><a href="">Politique de divulgation responsable</a></li>
+                <li><a href=""><?php echo $footer[4]?></a></li>
+                <li><a href=""><?php echo $footer[5]?></a></li>
+                <li><a href=""><?php echo $footer[6]?></a></li>
+                <li><a href=""><?php echo $footer[7]?></a></li>
+                <li><a href=""><?php echo $footer[8]?></a></li>
             </ul>
             <div class="reseaux">
-                <p>Réseaux sociaux : </p>
+                <p><?php echo $footer[9]?></p>
                 <a href=""><img src="assets/img/facebook2.png" alt="Facebook"></a>
                 <a href=""><img src="assets/img/twitter.png" alt="Twitter"></a>
                 <a href=""><img src="assets/img/insta.png" alt="Instagram"></a>
             </div>
             <div class="langue">
-                <p>Langue : </p>
-                <a href="index.php"><img src="assets/img/france.png" alt="Français"></a>
-                <a href="english.php"><img src="assets/img/united-kingdom.png" alt="English"></a>
+                <p><?php echo $footer[10]?></p>
+                <a href="?lang=fr"><img src="assets/img/france.png" alt="Français"></a>
+                <a href="?lang=en"><img src="assets/img/united-kingdom.png" alt="English"></a>
             </div>
         </div>
         <p class="info">
-            © 2021 Mascav. Tous droits réservés. Tout le contenu audio, visuel et textuel de ce site (y compris tous les noms, personnages, images et logo) est protégé par les droits d'auteur et autres droits de propriété intellectuelle détenus par Mascav.
+            <?php echo $footer[11]?>
         </p>
         <img src="assets/img/logo_v7.png" alt="SupremaSea" class="logo">
     </footer>

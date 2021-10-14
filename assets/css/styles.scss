@@ -151,6 +151,7 @@ body{
             margin: auto 5px;
             width: 130px;
             border-radius: 8px;
+            transition:.25s;
             &:hover{
               box-shadow: yellow 0 0 20px;
               transition:.25s;
@@ -162,10 +163,9 @@ body{
         display: block;
       }
     }
-    .plateau{
-      @include image-placeholder;
+    #plateau{
       margin-top: 50px;
-      padding: 80px 30px;
+      width: 100%;
     }
   }
   #profond{
