@@ -117,8 +117,8 @@ body{
     grid-template-columns: 1fr 2fr;
     grid-gap: 50px;
     .image-packaging{
-      @include image-placeholder;
-      padding: 120px 30px;
+      width: 100%;
+      margin: auto;
     }
     .lore{
       p{
@@ -140,8 +140,23 @@ body{
         line-height: 1.5em;
       }
       .apercu-cartes{
-        @include image-placeholder;
-        padding: 80px 30px;
+        width: 600px;
+        #cartes-slider{
+          display: flex;
+          width: 100%;
+          overflow-x: scroll;
+          overflow-y: visible;
+          padding: 20px 5px;
+          img{
+            margin: auto 5px;
+            width: 130px;
+            border-radius: 8px;
+            &:hover{
+              box-shadow: yellow 0 0 20px;
+              transition:.25s;
+            }
+          }
+        }
       }
       @media (max-width: 800px) {
         display: block;
@@ -158,20 +173,30 @@ body{
     text-align: center;
     padding: 30px 50px 60px;
     p{
-      padding-bottom: 30px;
+
     }
-    .button{
-      background-color: transparent;
-      border: white solid 2px;
-      padding: 20px;
-      font-size: 1.7em;
-      transition: background-color 200ms;
-      &:hover{
-        transition: 200ms;
-        background-color: $tresProfond;
+    form{
+      #mail{
+        display: block;
+        margin: 30px auto;
+        width: 450px;
+        height: 3em;
+        padding: 0 10px;
       }
-      @media (max-width: 400px) {
-        font-size: 1.2em;
+      .button{
+        background-color: transparent;
+        border: white solid 2px;
+        padding: 20px;
+        font-size: 1.7em;
+        transition: background-color 200ms;
+        cursor: pointer;
+        &:hover{
+          transition: 200ms;
+          background-color: $tresProfond;
+        }
+        @media (max-width: 400px) {
+          font-size: 1.2em;
+        }
       }
     }
   }
@@ -198,9 +223,8 @@ body{
         justify-content: space-between;
 
         .image-packaging {
-          @include image-placeholder;
-          padding: 120px 30px;
           margin: 10px 0;
+          width: 300px;
         }
 
         .article {
@@ -234,6 +258,7 @@ body{
         height: min-content;
         border: none;
         margin-top: 20px;
+        cursor: pointer;
       }
     }
   }
@@ -253,7 +278,7 @@ body{
     }
     .grille{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       ul{
         list-style-type: none;
         padding: 0;
@@ -262,6 +287,11 @@ body{
         img{
           width: 50px;
           border-radius: 10px;
+        }
+      }
+      .langue{
+        img{
+          width: 50px;
         }
       }
     }

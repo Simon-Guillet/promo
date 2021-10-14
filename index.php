@@ -25,15 +25,13 @@
             <a href="panier.php" class="button">Acheter</a>
         </nav>
         <div class="presentation">
-            <h1><img src="assets/img/logo_v4.png" alt="SupremaSea"></h1>
+            <h1><img src="assets/img/logo_v7.png" alt="SupremaSea"></h1>
             <h2>La Conquête du Monde à portée de nageoires</h2>
             <a href="" class="button">Essayer le jeu en ligne</a>
         </div>
     </header>
     <section id="surface">
-        <div class="image-packaging">
-            Image du jeu packaging
-        </div>
+        <img class="image-packaging" src="assets/img/packshotf.jpg" alt="packaging">
         <div class="lore">
             <h3>Plutôt requin ou dauphin ? Choisis ton camp !</h3>
             <p>Les requins et les dauphins, après s’être débarrassé de l’espèce humaine qui polluait les océans, se livrent une guerre sans merci pour le contrôle de la Terre et la survie de leur espèce !
@@ -60,7 +58,15 @@
                 </ul>
             </div>
             <div class="apercu-cartes">
-                Image aperçu des cartes
+                <h3>Les Cartes</h3>
+                <div id="cartes-slider">
+                    <img src="assets/img/cartes/delphine.png" alt="Delphine">
+                    <img src="assets/img/cartes/la_dent_de_la_mer.png" alt="La dent de la mer">
+                    <img src="assets/img/cartes/shar_pille.png" alt="Shar-pille">
+                    <img src="assets/img/cartes/sharkness.png" alt="Sharkness">
+                    <img src="assets/img/cartes/tony_shark.png" alt="Tony Shark">
+                    <img src="assets/img/cartes/will_e.png" alt="Will-E">
+                </div>
             </div>
         </div>
 
@@ -70,7 +76,10 @@
     </section>
     <section id="profond">
         <p>Inscrivez vous à notre newsletter pour ne manquer aucune information.</p>
-        <a href="" class="button">Inscription newsletter</a>
+        <form action="index.php">
+            <input type="email" name="E-mail" id="mail" placeholder="Votre adresse mail">
+            <input type="submit" class="button" name="Inscription newsletter" value="Inscription newsletter">
+        </form>
     </section>
     <section id="tresProfond">
         <div class="pdf">
@@ -79,10 +88,10 @@
     </section>
     <footer>
         <nav>
-            <a href="">Acheter</a>
+            <a href="panier.php">Acheter</a>
             <a href="">Jeu en ligne</a>
             <a href="">Contact</a>
-            <a href="">Revenir au sommet</a>
+            <a href="#">Revenir au sommet</a>
         </nav>
         <div class="grille">
             <ul>
@@ -98,11 +107,16 @@
                 <a href=""><img src="assets/img/twitter.png" alt="Twitter"></a>
                 <a href=""><img src="assets/img/insta.png" alt="Instagram"></a>
             </div>
+            <div class="langue">
+                <p>Langue : </p>
+                <a href="index.php"><img src="assets/img/france.png" alt="Français"></a>
+                <a href="english.php"><img src="assets/img/united-kingdom.png" alt="English"></a>
+            </div>
         </div>
         <p class="info">
             © 2021 Mascav. Tous droits réservés. Tout le contenu audio, visuel et textuel de ce site (y compris tous les noms, personnages, images et logo) est protégé par les droits d'auteur et autres droits de propriété intellectuelle détenus par Mascav.
         </p>
-        <img src="assets/img/logo_v5.png" alt="SupremaSea" class="logo">
+        <img src="assets/img/logo_v7.png" alt="SupremaSea" class="logo">
     </footer>
 </body>
 </html>

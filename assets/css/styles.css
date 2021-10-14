@@ -104,13 +104,8 @@ body #surface {
   grid-gap: 50px;
 }
 body #surface .image-packaging {
-  background-color: #DEDEDE;
-  color: white;
-  display: block;
-  font-size: 2em;
-  padding: 30px;
-  text-align: center;
-  padding: 120px 30px;
+  width: 100%;
+  margin: auto;
 }
 body #surface .lore p {
   text-align: justify;
@@ -133,13 +128,23 @@ body #peuProfond .grille li {
   line-height: 1.5em;
 }
 body #peuProfond .grille .apercu-cartes {
-  background-color: #DEDEDE;
-  color: white;
-  display: block;
-  font-size: 2em;
-  padding: 30px;
-  text-align: center;
-  padding: 80px 30px;
+  width: 600px;
+}
+body #peuProfond .grille .apercu-cartes #cartes-slider {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: visible;
+  padding: 20px 5px;
+}
+body #peuProfond .grille .apercu-cartes #cartes-slider img {
+  margin: auto 5px;
+  width: 130px;
+  border-radius: 8px;
+}
+body #peuProfond .grille .apercu-cartes #cartes-slider img:hover {
+  box-shadow: yellow 0 0 20px;
+  transition: 0.25s;
 }
 @media (max-width: 800px) {
   body #peuProfond .grille {
@@ -161,22 +166,27 @@ body #profond {
   text-align: center;
   padding: 30px 50px 60px;
 }
-body #profond p {
-  padding-bottom: 30px;
+body #profond form #mail {
+  display: block;
+  margin: 30px auto;
+  width: 450px;
+  height: 3em;
+  padding: 0 10px;
 }
-body #profond .button {
+body #profond form .button {
   background-color: transparent;
   border: white solid 2px;
   padding: 20px;
   font-size: 1.7em;
   transition: background-color 200ms;
+  cursor: pointer;
 }
-body #profond .button:hover {
+body #profond form .button:hover {
   transition: 200ms;
   background-color: #0F3D54;
 }
 @media (max-width: 400px) {
-  body #profond .button {
+  body #profond form .button {
     font-size: 1.2em;
   }
 }
@@ -205,14 +215,8 @@ body #panier form .commande {
   justify-content: space-between;
 }
 body #panier form .commande .image-packaging {
-  background-color: #DEDEDE;
-  color: white;
-  display: block;
-  font-size: 2em;
-  padding: 30px;
-  text-align: center;
-  padding: 120px 30px;
   margin: 10px 0;
+  width: 300px;
 }
 body #panier form .commande .article {
   font-size: 2em;
@@ -239,6 +243,7 @@ body #panier form #acheter {
   height: min-content;
   border: none;
   margin-top: 20px;
+  cursor: pointer;
 }
 body footer {
   background-color: black;
@@ -257,7 +262,7 @@ body footer nav a {
 }
 body footer .grille {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 body footer .grille ul {
   list-style-type: none;
@@ -266,6 +271,9 @@ body footer .grille ul {
 body footer .grille .reseaux img {
   width: 50px;
   border-radius: 10px;
+}
+body footer .grille .langue img {
+  width: 50px;
 }
 body footer .info {
   text-align: center;

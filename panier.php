@@ -31,15 +31,13 @@
         <h2>Panier</h2>
         <form method="post" action="panier.php">
             <div class="commande">
-                <div class="image-packaging">
-                    Image du jeu packaging
-                </div>
+                <img class="image-packaging" src="assets/img/packshotf.jpg" alt="packaging">
                 <div class="article">SupremaSea</div>
                 <div class="nombre" id="divnumber">
                     <input type="number" id="number" v-model="nombreDeJeux" class="QuantitySelect" value="1" min="1" max="99">
                     <div class="prix"><span id="price">{{ nombreDeJeux*15 }}</span> €</div>
                 </div>
-                <a href="index.html" class="quit">
+                <a href="index.php" class="quit">
                     <i class="fa fa-close"></i>
                 </a>
             </div>
@@ -49,10 +47,10 @@
 
     <footer>
         <nav>
-            <a href="">Acheter</a>
+            <a href="panier.php">Acheter</a>
             <a href="">Jeu en ligne</a>
             <a href="">Contact</a>
-            <a href="">Revenir au sommet</a>
+            <a href="#">Revenir au sommet</a>
         </nav>
         <div class="grille">
             <ul>
@@ -68,11 +66,16 @@
                 <a href=""><img src="assets/img/twitter.png" alt="Twitter"></a>
                 <a href=""><img src="assets/img/insta.png" alt="Instagram"></a>
             </div>
+            <div class="langue">
+                <p>Langue : </p>
+                <a href="index.php"><img src="assets/img/france.png" alt="Français"></a>
+                <a href="english.php"><img src="assets/img/united-kingdom.png" alt="English"></a>
+            </div>
         </div>
         <p class="info">
             © 2021 Mascav. Tous droits réservés. Tout le contenu audio, visuel et textuel de ce site (y compris tous les noms, personnages, images et logo) est protégé par les droits d'auteur et autres droits de propriété intellectuelle détenus par Mascav.
         </p>
-        <img src="assets/img/logo_v5.png" alt="SupremaSea" class="logo">
+        <img src="assets/img/logo_v7.png" alt="SupremaSea" class="logo">
     </footer>
     <script>
         const appCode = {
