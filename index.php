@@ -130,10 +130,22 @@ if ($lang==="en") {
     </section>
     <section id="profond">
         <p><?php echo $profond[0]?></p>
-        <form action="index.php">
+        <form action="index.php" method="post">
             <input type="email" name="E-mail" id="mail" placeholder="<?php echo $profond[1]?>">
             <input type="submit" class="button" name="Inscription newsletter" value="<?php echo $profond[2]?>">
         </form>
+        <?php
+            require ('./database.php');
+            $bdd = new PDO('mysql:host='.$servername.';dbname='.$dbname.'' , $username , $password);
+
+            if (isset($_POST['E-mail'])){
+                $mail = $_POST['E-mail'];
+                $requete = "INSERT INTO mail VALUES( NULL , '$mail' )";
+                $resultat = $bdd->query($requete);
+                echo ('<p>Vous êtes bien inscrit !</p>');
+            }
+
+        ?>
     </section>
     <section id="tresProfond">
         <div class="pdf">
