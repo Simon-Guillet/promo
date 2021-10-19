@@ -142,6 +142,7 @@ body #peuProfond .grille .apercu-cartes #cartes-slider img {
   width: 130px;
   border-radius: 8px;
   transition: 0.25s;
+  cursor: pointer;
 }
 body #peuProfond .grille .apercu-cartes #cartes-slider img:hover {
   box-shadow: yellow 0 0 20px;
@@ -167,6 +168,9 @@ body #peuProfond #lightbox.afficher {
 }
 body #peuProfond #lightbox.afficher img {
   height: 100%;
+}
+body #peuProfond #lightbox.afficher .close {
+  cursor: pointer;
 }
 body #peuProfond #plateau {
   margin-top: 50px;

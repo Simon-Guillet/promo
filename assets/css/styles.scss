@@ -152,6 +152,7 @@ body{
             width: 130px;
             border-radius: 8px;
             transition:.25s;
+            cursor: pointer;
             &:hover{
               box-shadow: yellow 0 0 20px;
               transition:.25s;
@@ -177,6 +178,9 @@ body{
       background-color: #00000080;
       img{
         height: 100%;
+      }
+      .close{
+        cursor: pointer;
       }
     }
     #plateau{
