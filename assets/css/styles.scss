@@ -163,6 +163,22 @@ body{
         display: block;
       }
     }
+    #lightbox{
+      display: none;
+    }
+    #lightbox.afficher{
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #00000080;
+      img{
+        height: 100%;
+      }
+    }
     #plateau{
       margin-top: 50px;
       width: 100%;

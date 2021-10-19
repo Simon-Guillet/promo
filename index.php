@@ -79,6 +79,7 @@ if ($lang==="en") {
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/nav-responsive.js"></script>
+    <script src="assets/js/lightbox.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
@@ -116,14 +117,23 @@ if ($lang==="en") {
             <div class="apercu-cartes">
                 <h3><?php echo $peuProfond[1]?></h3>
                 <div id="cartes-slider">
-                    <img src="assets/img/cartes/delphine.png" alt="Delphine">
-                    <img src="assets/img/cartes/la_dent_de_la_mer.png" alt="La dent de la mer">
-                    <img src="assets/img/cartes/shar_pille.png" alt="Shar-pille">
-                    <img src="assets/img/cartes/sharkness.png" alt="Sharkness">
-                    <img src="assets/img/cartes/tony_shark.png" alt="Tony Shark">
-                    <img src="assets/img/cartes/will_e.png" alt="Will-E">
+                    <img onclick="lightbox('daulouphi')" src="assets/img/cartes/daulouphi.png" alt="Daulouphi">
+                    <img onclick="lightbox('delphine')" src="assets/img/cartes/delphine.png" alt="Delphine">
+                    <img onclick="lightbox('la_dent_de_la_mer')" src="assets/img/cartes/la_dent_de_la_mer.png" alt="La dent de la mer">
+                    <img onclick="lightbox('le_charque')" src="assets/img/cartes/le_charque.png" alt="Le Charque">
+                    <img onclick="lightbox('megal-x0d18')" src="assets/img/cartes/megal-x0d18.png" alt="Megal-X0d18">
+                    <img onclick="lightbox('scie-borg')" src="assets/img/cartes/scie-borg.png" alt="Scie-borg">
+                    <img onclick="lightbox('shar_pille')" src="assets/img/cartes/shar_pille.png" alt="Shar-pille">
+                    <img onclick="lightbox('sharkness')" src="assets/img/cartes/sharkness.png" alt="Sharkness">
+                    <img onclick="lightbox('tony_shark')" src="assets/img/cartes/tony_shark.png" alt="Tony Shark">
+                    <img onclick="lightbox('will_e')" src="assets/img/cartes/will_e.png" alt="Will-E">
                 </div>
             </div>
+        </div>
+
+        <div id="lightbox" class="lightbox">
+            <img id="image" src="assets/img/cartes/delphine.png" alt="Delphine">
+            <div class="close" onclick="lightbox()"><i class="fa fa-close"></i></div>
         </div>
 
         <img src="assets/img/cartes/plateau.jpg" alt="Plateau" id="plateau">
@@ -140,7 +150,7 @@ if ($lang==="en") {
 
             if (isset($_POST['E-mail'])){
                 $mail = $_POST['E-mail'];
-                $requete = "INSERT INTO mail VALUES( NULL , '$mail' )";
+                $requete = "INSERT INTO promo VALUES( NULL , '$mail' )";
                 $resultat = $bdd->query($requete);
                 echo ('<p>Vous êtes bien inscrit !</p>');
             }

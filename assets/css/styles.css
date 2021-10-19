@@ -152,6 +152,22 @@ body #peuProfond .grille .apercu-cartes #cartes-slider img:hover {
     display: block;
   }
 }
+body #peuProfond #lightbox {
+  display: none;
+}
+body #peuProfond #lightbox.afficher {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000080;
+}
+body #peuProfond #lightbox.afficher img {
+  height: 100%;
+}
 body #peuProfond #plateau {
   margin-top: 50px;
   width: 100%;
