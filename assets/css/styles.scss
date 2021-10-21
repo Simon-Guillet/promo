@@ -14,6 +14,9 @@ $tresProfond: #0F3D54;
   text-align: center;
 }
 
+:root{
+  --rotateSpeed: 30s;
+}
 
 body{
   font-family: sans-serif;
@@ -243,12 +246,85 @@ body{
   }
   #tresProfond{
     background-color: $tresProfond;
+    transform-style: preserve-3d;
     .grille{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 1em;
       img{
         width: 100%;
+      }
+    }
+    .scene{
+      transform-style: preserve-3d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 800px;
+      perspective-origin: top;
+      perspective: 800px;
+      isolation: isolate;
+      //animation: sceneRotate var(--rotateSpeed) infinite linear;
+
+      @keyframes sceneRotate {
+        to { transform: rotateY(360deg); }
+      }
+      .boite{
+        width: 100%;
+        height: 100%;
+        backface-visibility: visible;
+        transform-style: preserve-3d;
+        position: relative;
+        *{
+          position: absolute;
+          transform-style: preserve-3d;
+          display: block;
+          left: 450px;
+          top: 200px;
+          box-shadow: 0 0 10px #000000cf inset;
+        }
+        .face, .derriere{
+          width: calc(1182px/4);
+          height: calc(1718px/4);
+        }
+        .haut, .bas{
+          width: calc(1182px/4);
+          height: calc(392px/4);
+        }
+        .droite, .gauche{
+          width: calc(392px/4);
+          height: calc(1718px/4);
+        }
+        .face{
+          background: url("../img/packaging/face.png");
+          background-size: contain;
+          transform: translateZ(calc(392px/8));
+        }
+        .derriere{
+          background: url("../img/packaging/derriere.png");
+          background-size: contain;
+          transform: translateZ(calc(-392px/8)) rotateY(180deg);
+        }
+        .droite{
+          background: url("../img/packaging/droite.png");
+          background-size: contain;
+          transform: translateX(calc(99px + 1182px/8)) rotateY(90deg);
+        }
+        .gauche{
+          background: url("../img/packaging/gauche.png");
+          background-size: contain;
+          transform: translateX(calc(99px + -1182px/8)) rotateY(-90deg);
+        }
+        .haut{
+          background: url("../img/packaging/haut.png");
+          background-size: contain;
+          transform: translateY(calc(5px + -1718px/32)) rotateX(90deg);
+        }
+        .bas{
+          background: url("../img/packaging/bas.png");
+          background-size: contain;
+          transform: translateY(calc(-50px + 1718px/4)) rotateX(90deg);
+        }
       }
     }
   }

@@ -1,3 +1,7 @@
+:root {
+  --rotateSpeed: 30s;
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -230,6 +234,7 @@ body #profond form .button:hover {
 }
 body #tresProfond {
   background-color: #0F3D54;
+  transform-style: preserve-3d;
 }
 body #tresProfond .grille {
   display: grid;
@@ -238,6 +243,78 @@ body #tresProfond .grille {
 }
 body #tresProfond .grille img {
   width: 100%;
+}
+body #tresProfond .scene {
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  perspective-origin: top;
+  perspective: 800px;
+  isolation: isolate;
+}
+@keyframes sceneRotate {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+body #tresProfond .scene .boite {
+  width: 100%;
+  height: 100%;
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+  position: relative;
+}
+body #tresProfond .scene .boite * {
+  position: absolute;
+  transform-style: preserve-3d;
+  display: block;
+  left: 450px;
+  top: 200px;
+  box-shadow: 0 0 10px #000000cf inset;
+}
+body #tresProfond .scene .boite .face, body #tresProfond .scene .boite .derriere {
+  width: calc(1182px/4);
+  height: calc(1718px/4);
+}
+body #tresProfond .scene .boite .haut, body #tresProfond .scene .boite .bas {
+  width: calc(1182px/4);
+  height: calc(392px/4);
+}
+body #tresProfond .scene .boite .droite, body #tresProfond .scene .boite .gauche {
+  width: calc(392px/4);
+  height: calc(1718px/4);
+}
+body #tresProfond .scene .boite .face {
+  background: url("../img/packaging/face.png");
+  background-size: contain;
+  transform: translateZ(calc(392px/8));
+}
+body #tresProfond .scene .boite .derriere {
+  background: url("../img/packaging/derriere.png");
+  background-size: contain;
+  transform: translateZ(calc(-392px/8)) rotateY(180deg);
+}
+body #tresProfond .scene .boite .droite {
+  background: url("../img/packaging/droite.png");
+  background-size: contain;
+  transform: translateX(calc(99px + 1182px/8)) rotateY(90deg);
+}
+body #tresProfond .scene .boite .gauche {
+  background: url("../img/packaging/gauche.png");
+  background-size: contain;
+  transform: translateX(calc(99px + -1182px/8)) rotateY(-90deg);
+}
+body #tresProfond .scene .boite .haut {
+  background: url("../img/packaging/haut.png");
+  background-size: contain;
+  transform: translateY(calc(5px + -1718px/32)) rotateX(90deg);
+}
+body #tresProfond .scene .boite .bas {
+  background: url("../img/packaging/bas.png");
+  background-size: contain;
+  transform: translateY(calc(-50px + 1718px/4)) rotateX(90deg);
 }
 body #panier {
   background-color: #31A2C4;

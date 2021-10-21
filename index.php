@@ -182,10 +182,22 @@ if ($lang==="en") {
     </section>
     <section id="tresProfond">
         <h3>Flyers</h3>
+        <!--
         <div class="grille">
             <img src="assets/img/packaging02.jpg" alt="Packaging 02">
             <img src="assets/img/packaging/derriere.png" alt="Dos de la boite">
             <img src="assets/img/packshot.jpg" alt="Packshot">
+        </div>
+        -->
+        <div class="scene">
+            <div class="boite">
+                <div class="face"></div>
+                <div class="bas"></div>
+                <div class="derriere"></div>
+                <div class="droite"></div>
+                <div class="gauche"></div>
+                <div class="haut"></div>
+            </div>
         </div>
     </section>
     <footer>
