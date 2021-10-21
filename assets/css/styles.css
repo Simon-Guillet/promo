@@ -87,7 +87,7 @@ body header .presentation h2 {
 }
 body header .presentation .button {
   font-size: 1.5em;
-  padding: 15px 60px;
+  padding: 0.6em 2em;
   text-align: center;
   margin: 0 auto;
   display: table;
@@ -148,9 +148,12 @@ body #peuProfond .grille .apercu-cartes #cartes-slider img:hover {
   box-shadow: yellow 0 0 20px;
   transition: 0.25s;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   body #peuProfond .grille {
     display: block;
+  }
+  body #peuProfond .grille .apercu-cartes {
+    width: 100%;
   }
 }
 body #peuProfond #lightbox {
@@ -175,6 +178,26 @@ body #peuProfond #lightbox.afficher .close {
 body #peuProfond #plateau {
   margin-top: 50px;
   width: 100%;
+  display: flex;
+}
+body #peuProfond #plateau img {
+  width: 100%;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+body #peuProfond #plateau img:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+  box-shadow: #0000005c 0 10px 5px;
+}
+@media (max-width: 1000px) {
+  body #peuProfond #plateau {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  body #peuProfond #plateau img {
+    width: 150px;
+    margin: 10px 0;
+  }
 }
 body #profond {
   background-color: #1C5D71;
@@ -184,14 +207,14 @@ body #profond {
 body #profond form #mail {
   display: block;
   margin: 30px auto;
-  width: 450px;
+  width: clamp(300px, 50vw, 600px);
   height: 3em;
   padding: 0 10px;
 }
 body #profond form .button {
   background-color: transparent;
   border: white solid 2px;
-  padding: 20px;
+  padding: 0.7em;
   font-size: 1.7em;
   transition: background-color 200ms;
   cursor: pointer;
@@ -208,14 +231,13 @@ body #profond form .button:hover {
 body #tresProfond {
   background-color: #0F3D54;
 }
-body #tresProfond .pdf {
-  background-color: #DEDEDE;
-  color: white;
-  display: block;
-  font-size: 2em;
-  padding: 30px;
-  text-align: center;
-  padding: 150px 30px;
+body #tresProfond .grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+body #tresProfond .grille img {
+  width: 100%;
 }
 body #panier {
   background-color: #31A2C4;
@@ -278,10 +300,14 @@ body footer nav a {
 body footer .grille {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
 }
 body footer .grille ul {
   list-style-type: none;
   padding: 0;
+}
+body footer .grille ul li {
+  margin-bottom: 0.3em;
 }
 body footer .grille .reseaux img {
   width: 50px;
@@ -301,15 +327,22 @@ body footer .logo {
   width: 200px;
 }
 @media (max-width: 640px) {
+  body footer {
+    text-align: center;
+  }
   body footer nav {
     flex-direction: column;
     line-height: 2em;
   }
   body footer .grille {
-    display: block;
+    display: flow-root;
   }
   body footer .grille ul {
     line-height: 1.3em;
+  }
+  body footer .grille .reseaux, body footer .grille .langue {
+    width: 50%;
+    float: left;
   }
 }
 

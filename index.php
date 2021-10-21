@@ -98,13 +98,13 @@ if ($lang==="en") {
             <a href="panier.php" class="button"><?php echo $header[3]?></a>
         </nav>
         <div class="presentation">
-            <h1><img src="assets/img/logo_v7.png" alt="SupremaSea"></h1>
+            <h1><img src="assets/img/logo_v9.png" alt="SupremaSea"></h1>
             <h2><?php echo $header[4]?></h2>
             <a href="" class="button"><?php echo $header[5]?></a>
         </div>
     </header>
     <section id="surface">
-        <img class="image-packaging" src="assets/img/packshotf.jpg" alt="packaging">
+        <img class="image-packaging" src="assets/img/packshot.jpg" alt="packaging">
         <div class="lore">
             <?php echo $surface[0]?>
         </div>
@@ -117,26 +117,49 @@ if ($lang==="en") {
             <div class="apercu-cartes">
                 <h3><?php echo $peuProfond[1]?></h3>
                 <div id="cartes-slider">
-                    <img onclick="lightbox('daulouphi')" src="assets/img/cartes/daulouphi.png" alt="Daulouphi">
-                    <img onclick="lightbox('delphine')" src="assets/img/cartes/delphine.png" alt="Delphine">
-                    <img onclick="lightbox('la_dent_de_la_mer')" src="assets/img/cartes/la_dent_de_la_mer.png" alt="La dent de la mer">
-                    <img onclick="lightbox('le_charque')" src="assets/img/cartes/le_charque.png" alt="Le Charque">
-                    <img onclick="lightbox('megal-x0d18')" src="assets/img/cartes/megal-x0d18.png" alt="Megal-X0d18">
-                    <img onclick="lightbox('scie-borg')" src="assets/img/cartes/scie-borg.png" alt="Scie-borg">
-                    <img onclick="lightbox('shar_pille')" src="assets/img/cartes/shar_pille.png" alt="Shar-pille">
-                    <img onclick="lightbox('sharkness')" src="assets/img/cartes/sharkness.png" alt="Sharkness">
-                    <img onclick="lightbox('tony_shark')" src="assets/img/cartes/tony_shark.png" alt="Tony Shark">
-                    <img onclick="lightbox('will_e')" src="assets/img/cartes/will_e.png" alt="Will-E">
+                    <img onclick="lightbox('dauphins/will_e')" src="assets/img/cartes/dauphins/will_e.png" alt="Will E">
+                    <img onclick="lightbox('dauphins/dau_quixote')" src="assets/img/cartes/dauphins/dau_quixote.png" alt="Dau Quixote">
+                    <img onclick="lightbox('dauphins/boto-feu')" src="assets/img/cartes/dauphins/boto-feu.png" alt="Boto-feu">
+                    <img onclick="lightbox('dauphins/dolph_lundgren')" src="assets/img/cartes/dauphins/dolph_lundgren.png" alt="Dolph Lundgren">
+                    <img onclick="lightbox('dauphins/delphine')" src="assets/img/cartes/dauphins/delphine.png" alt="Delphine">
+                    <img onclick="lightbox('dauphins/metal_dolph')" src="assets/img/cartes/dauphins/metal_dolph.png" alt="Métal Dolph">
+                    <img onclick="lightbox('dauphins/daulouphin')" src="assets/img/cartes/dauphins/daulouphin.png" alt="Daulouphin">
+                    <img onclick="lightbox('dauphins/sire_adolphe_de_bergerac')" src="assets/img/cartes/dauphins/sire_adolphe_de_bergerac.png" alt="Sire Adolphe De Bergerac">
+                    <img onclick="lightbox('dauphins/flippe-peur')" src="assets/img/cartes/dauphins/flippe-peur.png" alt="Flippe-Peur">
+                    <img onclick="lightbox('dauphins/fawkes_hawk')" src="assets/img/cartes/dauphins/fawkes_hawk.png" alt="Fawkes Hawk">
+                    <img onclick="lightbox('requins/tony_shark')" src="assets/img/cartes/requins/tony_shark.png" alt="Tony Shark">
+                    <img onclick="lightbox('requins/El_Tiburon')" src="assets/img/cartes/requins/El_Tiburon.png" alt="El Tiburon">
+                    <img onclick="lightbox('requins/shar_pille')" src="assets/img/cartes/requins/shar_pille.png" alt="Shar-Pille">
+                    <img onclick="lightbox('requins/megal-x0d18')" src="assets/img/cartes/requins/megal-x0d18.png" alt="Megal-x0d18">
+                    <img onclick="lightbox('requins/scie-borg')" src="assets/img/cartes/requins/scie-borg.png" alt="Scie-Borg">
+                    <img onclick="lightbox('requins/marteaurnade')" src="assets/img/cartes/requins/marteaurnade.png" alt="Marteaurnade">
+                    <img onclick="lightbox('requins/le_charque')" src="assets/img/cartes/requins/le_charque.png" alt="Le Charque">
+                    <img onclick="lightbox('requins/requo_vulovic')" src="assets/img/cartes/requins/requo_vulovic.png" alt="Requo Vulovic">
+                    <img onclick="lightbox('requins/la_dent_de_la_mer')" src="assets/img/cartes/requins/la_dent_de_la_mer.png" alt="La Dent De La Mer">
+                    <img onclick="lightbox('requins/sharkness')" src="assets/img/cartes/requins/sharkness.png" alt="Sharkness">
                 </div>
             </div>
         </div>
 
         <div id="lightbox" class="lightbox">
-            <img id="image" src="assets/img/cartes/delphine.png" alt="Delphine">
+            <img id="image" src="//unsplash.it/697/1028" alt="Delphine">
             <div class="close" onclick="lightbox()"><i class="fa fa-close"></i></div>
         </div>
 
-        <img src="assets/img/cartes/plateau.jpg" alt="Plateau" id="plateau">
+        <div id="plateau">
+            <img src="assets/img/plateau/1.png" alt="Plateau">
+            <img src="assets/img/plateau/2.png" alt="Plateau">
+            <img src="assets/img/plateau/3.png" alt="Plateau">
+            <img src="assets/img/plateau/4.png" alt="Plateau">
+            <img src="assets/img/plateau/5.png" alt="Plateau">
+            <img src="assets/img/plateau/6.png" alt="Plateau">
+            <img src="assets/img/plateau/7.png" alt="Plateau">
+            <img src="assets/img/plateau/8.png" alt="Plateau">
+            <img src="assets/img/plateau/9.png" alt="Plateau">
+            <img src="assets/img/plateau/10.png" alt="Plateau">
+            <img src="assets/img/plateau/11.png" alt="Plateau">
+        </div>
+
     </section>
     <section id="profond">
         <p><?php echo $profond[0]?></p>
@@ -158,8 +181,11 @@ if ($lang==="en") {
         ?>
     </section>
     <section id="tresProfond">
-        <div class="pdf">
-            <?php echo $tresProfond[0]?>
+        <h3>Flyers</h3>
+        <div class="grille">
+            <img src="assets/img/packaging02.jpg" alt="Packaging 02">
+            <img src="assets/img/packaging/derriere.png" alt="Dos de la boite">
+            <img src="assets/img/packshot.jpg" alt="Packshot">
         </div>
     </section>
     <footer>
@@ -192,7 +218,7 @@ if ($lang==="en") {
         <p class="info">
             <?php echo $footer[11]?>
         </p>
-        <img src="assets/img/logo_v7.png" alt="SupremaSea" class="logo">
+        <img src="assets/img/logo_v9.png" alt="SupremaSea" class="logo">
     </footer>
 </body>
 </html>

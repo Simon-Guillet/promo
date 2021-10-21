@@ -6,6 +6,6 @@ function lightbox(n) {
     } else {
         lightbox.className = "lightbox";
     }
-    lightbox.innerHTML = "<img id=\"image\" src=\"assets/img/cartes/"+n+".png\" alt=\"Delphine\">\n" +
+    lightbox.innerHTML = "<img id=\"image\" src=\"assets/img/cartes/"+n+".png\" alt="+n+">\n" +
         "            <div class=\"close\" onclick=\"lightbox()\"><i class=\"fa fa-close\"></i></div>"
 }
