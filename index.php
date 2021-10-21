@@ -147,17 +147,17 @@ if ($lang==="en") {
         </div>
 
         <div id="plateau">
-            <img src="assets/img/plateau/1.png" alt="Plateau">
-            <img src="assets/img/plateau/2.png" alt="Plateau">
-            <img src="assets/img/plateau/3.png" alt="Plateau">
-            <img src="assets/img/plateau/4.png" alt="Plateau">
-            <img src="assets/img/plateau/5.png" alt="Plateau">
-            <img src="assets/img/plateau/6.png" alt="Plateau">
-            <img src="assets/img/plateau/7.png" alt="Plateau">
-            <img src="assets/img/plateau/8.png" alt="Plateau">
-            <img src="assets/img/plateau/9.png" alt="Plateau">
-            <img src="assets/img/plateau/10.png" alt="Plateau">
-            <img src="assets/img/plateau/11.png" alt="Plateau">
+            <div class="plateau"><img src="assets/img/plateau/1.png" alt="Plateau"></div>
+            <div class="plateau"><img src="assets/img/plateau/2.png" alt="Plateau"></div>
+            <div class="plateau"><img src="assets/img/plateau/3.png" alt="Plateau"></div>
+            <div class="plateau"><img src="assets/img/plateau/4.png" alt="Plateau"></div>
+            <div class="plateau"><img src="assets/img/plateau/5.png" alt="Plateau"></div>
+            <div class="plateau"><img src="assets/img/plateau/6.png" alt="Plateau"></div>
+            <div class="plateau"><img src="assets/img/plateau/7.png" alt="Plateau"></div>
+            <div class="plateau"><img src="assets/img/plateau/8.png" alt="Plateau"></div>
+            <div class="plateau"><img src="assets/img/plateau/9.png" alt="Plateau"></div>
+            <div class="plateau"><img src="assets/img/plateau/10.png" alt="Plateau"></div>
+            <div class="plateau"><img src="assets/img/plateau/11.png" alt="Plateau"></div>
         </div>
 
     </section>

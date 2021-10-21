@@ -1,3 +1,15 @@
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1283ac;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #19afdd;
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -238,6 +250,11 @@ body #tresProfond .grille {
 }
 body #tresProfond .grille img {
   width: 100%;
+}
+@media (max-width: 1000px) {
+  body #tresProfond .grille {
+    grid-template-columns: 1fr;
+  }
 }
 body #panier {
   background-color: #31A2C4;
