@@ -45,7 +45,15 @@ body{
     }
   }
   header{
-    background-color: $gris;
+    background: url("../video.mp4");
+    #myVideo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
     .icon{
       display: none;
       color: white;

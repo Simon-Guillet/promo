@@ -88,6 +88,7 @@ if ($lang==="en") {
 </head>
 <body>
     <header>
+        <video autoplay muted loop src="assets/video.mp4" id="myVideo"></video>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>

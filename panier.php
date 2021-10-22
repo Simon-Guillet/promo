@@ -30,7 +30,7 @@
         <h2>Panier</h2>
         <form method="post" action="panier.php">
             <div class="commande">
-                <img class="image-packaging" src="assets/img/packshotf.jpg" alt="packaging">
+                <img class="image-packaging" src="assets/img/packshot.jpg" alt="packaging">
                 <div class="article">SupremaSea</div>
                 <div class="nombre" id="divnumber">
                     <input type="number" id="number" v-model="nombreDeJeux" class="QuantitySelect" value="1" min="1" max="99">

@@ -31,7 +31,15 @@ body .button:hover {
   background-color: #0F3D54;
 }
 body header {
-  background-color: #DEDEDE;
+  background: url("../video.mp4");
+}
+body header #myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 body header .icon {
   display: none;
