@@ -30,16 +30,20 @@ body .button:hover {
   transition: 200ms;
   background-color: #0F3D54;
 }
-body header {
-  background: url("../video.mp4");
-}
-body header #myVideo {
+body header .video-container {
   position: absolute;
   top: 0;
-  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: inherit;
   width: 100%;
-  min-height: 100%;
-  z-index: -1;
+  z-index: -2;
+}
+body header .video-container #myVideo {
+  height: 710px;
+  min-width: 100%;
 }
 body header .icon {
   display: none;
@@ -79,11 +83,11 @@ body header nav a:hover {
   }
 }
 body header .presentation {
-  padding: 50px 100px 130px 100px;
+  padding: 3em 6em 8em 6em;
 }
 @media (max-width: 800px) {
   body header .presentation {
-    padding: 50px 30px 130px 30px;
+    padding: 3em 2em 8em 3em;
   }
 }
 body header .presentation h1 {
@@ -313,6 +317,9 @@ body footer {
 }
 body footer a {
   color: white;
+}
+body footer a:hover {
+  text-decoration: underline;
 }
 body footer nav {
   display: flex;

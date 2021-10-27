@@ -20,9 +20,9 @@
             <i class="fa fa-bars"></i>
         </a>
         <nav class="topnav" id="myTopnav">
-            <a href="">Jeu en ligne</a>
-            <a href="">Jeu physique</a>
-            <a href="">Nous contacter</a>
+            <a href="http://mmid20b02.mmi-troyes.fr/jeu/">Jeu en ligne</a>
+            <a href="index.php">Jeu physique</a>
+            <a href="http://149.91.90.177/mascav/">Nous contacter</a>
             <a href="panier.php" class="button">Acheter</a>
         </nav>
     </header>
@@ -46,13 +46,13 @@
     <footer>
         <nav>
             <a href="panier.php">Acheter</a>
-            <a href="">Jeu en ligne</a>
-            <a href="">Contact</a>
+            <a href="http://mmid20b02.mmi-troyes.fr/jeu/">Jeu en ligne</a>
+            <a href="http://149.91.90.177/mascav/">Contact</a>
             <a href="#">Revenir au sommet</a>
         </nav>
         <div class="grille">
             <ul>
-                <li><a href="">Service consommateurs</a></li>
+                <li><a href="http://149.91.90.177/mascav/">Service consommateurs</a></li>
                 <li><a href="">Politique de confidentialité</a></li>
                 <li><a href="">Termes Et Conditions d'utilisation</a></li>
                 <li><a href="">Cookies</a></li>
@@ -60,9 +60,9 @@
             </ul>
             <div class="reseaux">
                 <p>Réseaux sociaux : </p>
-                <a href=""><img src="assets/img/facebook2.png" alt="Facebook"></a>
-                <a href=""><img src="assets/img/twitter.png" alt="Twitter"></a>
-                <a href=""><img src="assets/img/insta.png" alt="Instagram"></a>
+                <a href="http://facebook.com"><img src="assets/img/facebook2.png" alt="Facebook"></a>
+                <a href="http://twitter.com"><img src="assets/img/twitter.png" alt="Twitter"></a>
+                <a href="http://intagram.com"><img src="assets/img/insta.png" alt="Instagram"></a>
             </div>
             <div class="langue">
                 <p>Langue : </p>

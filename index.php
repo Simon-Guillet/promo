@@ -88,14 +88,16 @@ if ($lang==="en") {
 </head>
 <body>
     <header>
-        <video autoplay muted loop src="assets/video.mp4" id="myVideo"></video>
+        <div class="video-container">
+            <video autoplay muted loop src="assets/video.mp4" id="myVideo"></video>
+        </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
         <nav class="topnav" id="myTopnav">
-            <a href=""><?php echo $header[0]?></a>
-            <a href=""><?php echo $header[1]?></a>
-            <a href=""><?php echo $header[2]?></a>
+            <a href="http://mmid20b02.mmi-troyes.fr/jeu/"><?php echo $header[0]?></a>
+            <a href="index.php"><?php echo $header[1]?></a>
+            <a href="http://149.91.90.177/mascav/"><?php echo $header[2]?></a>
             <a href="panier.php" class="button"><?php echo $header[3]?></a>
         </nav>
         <div class="presentation">
@@ -185,20 +187,20 @@ if ($lang==="en") {
         <h3>Flyers</h3>
         <div class="grille">
             <img src="assets/img/packaging02.jpg" alt="Packaging 02">
-            <img src="assets/img/packaging/derriere.png" alt="Dos de la boite">
+            <img src="assets/img/packaging/derriere.jpg" alt="Dos de la boite">
             <img src="assets/img/packshot.jpg" alt="Packshot">
         </div>
     </section>
     <footer>
         <nav>
             <a href="panier.php"><?php echo $footer[0]?></a>
-            <a href=""><?php echo $footer[1]?></a>
-            <a href=""><?php echo $footer[2]?></a>
+            <a href="http://mmid20b02.mmi-troyes.fr/jeu/"><?php echo $footer[1]?></a>
+            <a href="http://149.91.90.177/mascav/"><?php echo $footer[2]?></a>
             <a href="#"><?php echo $footer[3]?></a>
         </nav>
         <div class="grille">
             <ul>
-                <li><a href=""><?php echo $footer[4]?></a></li>
+                <li><a href="http://149.91.90.177/mascav/"><?php echo $footer[4]?></a></li>
                 <li><a href=""><?php echo $footer[5]?></a></li>
                 <li><a href=""><?php echo $footer[6]?></a></li>
                 <li><a href=""><?php echo $footer[7]?></a></li>
@@ -206,9 +208,9 @@ if ($lang==="en") {
             </ul>
             <div class="reseaux">
                 <p><?php echo $footer[9]?></p>
-                <a href=""><img src="assets/img/facebook2.png" alt="Facebook"></a>
-                <a href=""><img src="assets/img/twitter.png" alt="Twitter"></a>
-                <a href=""><img src="assets/img/insta.png" alt="Instagram"></a>
+                <a href="http://facebook.com"><img src="assets/img/facebook2.png" alt="Facebook"></a>
+                <a href="http://twitter.com"><img src="assets/img/twitter.png" alt="Twitter"></a>
+                <a href="http://intagram.com"><img src="assets/img/insta.png" alt="Instagram"></a>
             </div>
             <div class="langue">
                 <p><?php echo $footer[10]?></p>
