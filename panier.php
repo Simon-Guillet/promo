@@ -8,10 +8,7 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/nav-responsive.js"></script>
     <script src="https://unpkg.com/vue@next"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicon_io/site.webmanifest">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -53,10 +50,10 @@
         <div class="grille">
             <ul>
                 <li><a href="http://149.91.90.177/mascav/">Service consommateurs</a></li>
-                <li><a href="">Politique de confidentialité</a></li>
-                <li><a href="">Termes Et Conditions d'utilisation</a></li>
+                <li><a href="legal.php#confidentialite">Politique de confidentialité</a></li>
+                <li><a href="legal.php#utilisation">Conditions générales d'utilisation</a></li>
                 <li><a href="">Cookies</a></li>
-                <li><a href="">Politique de divulgation responsable</a></li>
+                <li><a href="legal.php#divulgation">Politique de divulgation responsable</a></li>
             </ul>
             <div class="reseaux">
                 <p>Réseaux sociaux : </p>

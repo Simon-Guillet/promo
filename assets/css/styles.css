@@ -311,8 +311,30 @@ body #panier form #acheter {
   margin-top: 20px;
   cursor: pointer;
 }
+body #confidentialite {
+  background-color: #31A2C4;
+}
+body #confidentialite a {
+  color: white;
+  text-decoration: underline;
+}
+body #utilisation {
+  background-color: #257A99;
+}
+body #utilisation a {
+  color: white;
+  text-decoration: underline;
+}
+body #divulgation {
+  background-color: #1C5D71;
+}
+body #divulgation a {
+  color: white;
+  text-decoration: underline;
+}
 body footer {
   background-color: black;
+  color: white;
   padding: 50px;
 }
 body footer a {

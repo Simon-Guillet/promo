@@ -51,7 +51,7 @@ $enProfond=['Subscribe to our Newsletter to never miss any informations.','your 
 $frTresProfond=['Des PDF/Flyers ou Affiches téléchargeables'];
 $enTresProfond=['Downloadables PDF/Flyers or Posters'];
 
-$frFooter=['Acheter','Jeu en ligne','Contact','Revenir au sommet','Service consommateurs','Politique de confidentialité','Termes Et Conditions d\'utilisation','Cookies','Politique de divulgation responsable','Réseaux sociaux : ','Langue : ','© 2021 Mascav. Tous droits réservés. Tout le contenu audio, visuel et textuel de ce site (y compris tous les noms, personnages, images et logo) est protégé par les droits d\'auteur et autres droits de propriété intellectuelle détenus par Mascav.'];
+$frFooter=['Acheter','Jeu en ligne','Contact','Revenir au sommet','Service consommateurs','Politique de confidentialité','Conditions générales d\'utilisation','Cookies','Politique de divulgation responsable','Réseaux sociaux : ','Langue : ','© 2021 Mascav. Tous droits réservés. Tout le contenu audio, visuel et textuel de ce site (y compris tous les noms, personnages, images et logo) est protégé par les droits d\'auteur et autres droits de propriété intellectuelle détenus par Mascav.'];
 $enFooter=['Puchase','Online Game','Contact','Back to the top','Customer services','Privacy policy','Terms of Use','Cookies','Responsible Disclosure Policy','Social Medias :','Language : ','© 2021 Mascav. All rights reserved. Every content, be it audio,visual or textual, found on this website (Names, characters, images and logos included) are subjected to copyrights and other intellectual property rights held by Mascav.'];
 
 if ($lang==="en") {

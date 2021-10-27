@@ -334,8 +334,30 @@ body{
       }
     }
   }
+  #confidentialite{
+    background-color: $surface;
+    a{
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  #utilisation{
+    background-color: $peuProfond;
+    a{
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  #divulgation{
+    background-color: $profond;
+    a{
+      color: white;
+      text-decoration: underline;
+    }
+  }
   footer{
     background-color: black;
+    color: white;
     padding: 50px;
     a{
       color: white;
