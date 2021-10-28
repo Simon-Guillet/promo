@@ -25,19 +25,19 @@
     </header>
     <section id="panier">
         <h2>Panier</h2>
-        <form method="post" action="panier.php">
+        <form method="post" action="achat.php">
             <div class="commande">
                 <img class="image-packaging" src="assets/img/packshot.jpg" alt="packaging">
                 <div class="article">SupremaSea</div>
                 <div class="nombre" id="divnumber">
                     <input type="number" id="number" v-model="nombreDeJeux" class="QuantitySelect" value="1" min="1" max="99">
-                    <div class="prix"><span id="price">{{ nombreDeJeux*15 }}</span> €</div>
+                    <div class="prix"><span id="price">{{ (nombreDeJeux*11.90).toFixed(2) }}</span> €</div>
                 </div>
                 <a href="index.php" class="quit">
                     <i class="fa fa-close"></i>
                 </a>
             </div>
-            <input type="submit" value="acheter" name="Acheter" id="acheter">
+            <input type="submit" value="Acheter" name="Acheter" id="acheter">
         </form>
     </section>
     <footer>

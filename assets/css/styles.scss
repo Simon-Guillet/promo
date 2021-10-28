@@ -40,10 +40,14 @@ body{
     background-color: $profond;
     border-radius: 10px;
     transition: background-color 200ms;
+    cursor: pointer;
     &:hover{
       transition: 200ms;
       background-color: $tresProfond;
     }
+  }
+  .grille{
+    display: grid;
   }
   header{
     background: url("../img/accueil-back.gif") no-repeat;
@@ -320,6 +324,48 @@ body{
         border: none;
         margin-top: 20px;
         cursor: pointer;
+      }
+    }
+  }
+  #achat{
+    padding: 50px 100px;
+    margin: 0 auto;
+    form{
+      input, select{
+        border: #d9d9d9 1px solid;
+        border-radius: 5px;
+        display: block;
+        padding: 1em;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .grille1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        #adr{
+          grid-column: 2 / 4;
+        }
+        #ville{
+          grid-column: 2 / 4;
+        }
+        #tel{
+          grid-column: 2 / 4;
+        }
+      }
+      .grille2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        #num{
+          grid-column: 1 / 3;
+        }
+        #nom{
+          grid-column: 1 / 3;
+        }
+      }
+      .button{
+        border: none;
       }
     }
   }
