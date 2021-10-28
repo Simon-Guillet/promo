@@ -216,7 +216,7 @@
             </ul>
             <div class="reseaux">
                 <p>Réseaux sociaux : </p>
-                <a href="http://facebook.com"><img src="assets/img/facebook2.png" alt="Facebook"></a>
+                <a href="https://www.facebook.com/profile.php?id=100074103799212"><img src="assets/img/facebook2.png" alt="Facebook"></a>
                 <a href="http://twitter.com"><img src="assets/img/twitter.png" alt="Twitter"></a>
                 <a href="http://intagram.com"><img src="assets/img/insta.png" alt="Instagram"></a>
             </div>

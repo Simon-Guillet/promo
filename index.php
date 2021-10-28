@@ -10,12 +10,12 @@ $enHeader=["Online Game","Physical Game","Contact Us","Purchase","World Dominati
 
 $frSurface=['<h3>Plutôt requin ou dauphin ? Choisis ton camp !</h3>
             <p>Les requins et les dauphins, après s’être débarrassé de l’espèce humaine qui polluait les océans, se livrent une guerre sans merci pour le contrôle de la Terre et la survie de leur espèce !
-                Dans ce monde situé dans un lointain futur, commande une équipe de 10 requins ou dauphins chacun avec un type qui leur est propre mais tous armés jusqu’aux ailerons et détruis le camp adverse pour gagner la partie.
+                Dans ce monde situé dans un lointain futur, commande une équipe de 10 requins ou dauphins chacun avec un type qui leur est propre, mais tous armés jusqu’aux ailerons et détruis le camp adverse pour gagner la partie.
             </p>
             <h3>Description</h3>
-            <p>Le jeu se joue à deux joueurs. Chacun d’entre vous contrôle 10 requin ou dauphin de type
-                force, rapidité ou intelligence et de niveau variable (allant de 1 à 3) pour defendre votre ville et attaquer celle du camp adverse.
-                Lancez les dés et déplacez vos personnages à travers l’Océan Pacifique pour arriver à la ville ennemie. Si vos personnages croise le chemin d’un/des personnages du
+            <p>Le jeu se joue à deux joueurs. Chacun d’entre vous contrôle 10 requins ou dauphin de type
+                force, rapidité ou intelligence et de niveau variable (allant de 1 à 3) pour défendre votre ville et attaquer celle du camp adverse.
+                Lancez les dés et déplacez vos personnages à travers l’Océan Pacifique pour arriver à la ville ennemie. Si vos personnages croisent le chemin d’un/des personnages du
                 joueur adverse, un combat démarre alors et c’est là que les types entrent en jeu. Si l’étau se resserre, votre Leader se chargera alors personnellement de faire avancer vos troupes en gagnant les combats les plus difficiles. Pour que votre espèce triomphe et gagne la guerre pour le contrôle de la Terre, vous devrez détruire la ville adverse en premier ou éradiquer
                 toutes les troupes ennemies.
             </p>'];
@@ -32,8 +32,9 @@ $enSurface=['<h3>Shark, Dolphin? The choice is yours!</h3>
 
 $frPeuProfond=['<p>Une boîte de jeu comprend :</p>
                 <ul>
-                    <li>10 cartes requin et 10 cartes dauphin</li>
+                    <li>10 cartes requins et 10 cartes dauphins</li>
                     <li>11 cartes « plateau de jeu »</li>
+                    <li>2 cartes d\'explication du Shifumi</li>
                     <li>1 dépliant « Règles du jeu »</li>
                     <li>3 dés de couleur pour la force (rouge), la rapidité (vert) et l’intelligence (bleu) avec chacun 2 faces « 1 », 2 faces « 2 » et 2 faces « 3 ».</li>
                 </ul>','Les Cartes'];
@@ -41,7 +42,8 @@ $enPeuProfond=['<p>One Pack of Supremasea contains :</p>
             <ul>
                 <li>10 ‘’shark’’ cards and 10 ‘’dolphin’’ cards</li>
                 <li>11 ’’battlefield’’ tiles</li>
-                <li>1  flyer for the rules of the game</li>
+                <li>2 Shifumi explanation cards</li>
+                <li>1 flyer for the rules of the game</li>
                 <li>3 coloured dices corresponding to Grit (red) Bait (blue) and Gait (green), each with 2 sides with 1 pip, 2 sides with 2 pip and 2 sides with 3 pip</li>
             </ul>','The Cards'];
 
@@ -85,9 +87,6 @@ if ($lang==="en") {
 </head>
 <body>
     <header>
-        <div class="video-container">
-            <video autoplay muted loop src="assets/video.mp4" id="myVideo"></video>
-        </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -163,7 +162,7 @@ if ($lang==="en") {
     </section>
     <section id="profond">
         <p><?php echo $profond[0]?></p>
-        <form action="index.php" method="post">
+        <form action="index.php#profond" method="post">
             <input type="email" name="E-mail" id="mail" placeholder="<?php echo $profond[1]?>">
             <input type="submit" class="button" name="Inscription newsletter" value="<?php echo $profond[2]?>">
         </form>
@@ -198,14 +197,14 @@ if ($lang==="en") {
         <div class="grille">
             <ul>
                 <li><a href="http://149.91.90.177/mascav/"><?php echo $footer[4]?></a></li>
-                <li><a href=""><?php echo $footer[5]?></a></li>
-                <li><a href=""><?php echo $footer[6]?></a></li>
+                <li><a href="legal.php#confidentialite"><?php echo $footer[5]?></a></li>
+                <li><a href="legal.php#utilisation"><?php echo $footer[6]?></a></li>
                 <li><a href=""><?php echo $footer[7]?></a></li>
-                <li><a href=""><?php echo $footer[8]?></a></li>
+                <li><a href="legal.php#divulgation"><?php echo $footer[8]?></a></li>
             </ul>
             <div class="reseaux">
                 <p><?php echo $footer[9]?></p>
-                <a href="http://facebook.com"><img src="assets/img/facebook2.png" alt="Facebook"></a>
+                <a href="https://www.facebook.com/profile.php?id=100074103799212"><img src="assets/img/facebook2.png" alt="Facebook"></a>
                 <a href="http://twitter.com"><img src="assets/img/twitter.png" alt="Twitter"></a>
                 <a href="http://intagram.com"><img src="assets/img/insta.png" alt="Instagram"></a>
             </div>

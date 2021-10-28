@@ -16,6 +16,7 @@ body {
   padding: 0;
   color: white;
   background-color: #257A99;
+  overflow-x: hidden;
 }
 body a {
   text-decoration: none;
@@ -30,20 +31,10 @@ body .button:hover {
   transition: 200ms;
   background-color: #0F3D54;
 }
-body header .video-container {
-  position: absolute;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  height: inherit;
-  width: 100%;
-  z-index: -2;
-}
-body header .video-container #myVideo {
-  height: 710px;
-  min-width: 100%;
+body header {
+  background: url("../img/accueil-back.gif") no-repeat;
+  background-position-x: 50%;
+  background-size: cover;
 }
 body header .icon {
   display: none;

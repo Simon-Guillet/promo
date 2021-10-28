@@ -31,6 +31,7 @@ body{
   padding: 0;
   color: white;
   background-color: $peuProfond;
+  overflow-x: hidden;
   a{
     text-decoration: none;
   }
@@ -45,21 +46,9 @@ body{
     }
   }
   header{
-    .video-container{
-      position: absolute;
-      top: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      height: inherit;
-      width: 100%;
-      z-index: -2;
-      #myVideo {
-        height: 710px;
-        min-width: 100%;
-      }
-    }
+    background: url("../img/accueil-back.gif") no-repeat;
+    background-position-x: 50%;
+    background-size: cover;
     .icon{
       display: none;
       color: white;
