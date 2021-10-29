@@ -17,7 +17,7 @@
         <i class="fa fa-bars"></i>
     </a>
     <nav class="topnav" id="myTopnav">
-        <a href="http://mmid20b02.mmi-troyes.fr/jeu/">Jeu en ligne</a>
+        <a href="http://127.0.0.1:8000/">Jeu en ligne</a>
         <a href="index.php">Jeu physique</a>
         <a href="http://149.91.90.177/mascav/">Nous contacter</a>
         <a href="panier.php" class="button">Acheter</a>
@@ -279,7 +279,7 @@
                 <input type="tel" id="tel" placeholder="Téléphone">
             </div>
             <br>
-            <h2>Informations de payment</h2>
+            <h2>Informations de paiement</h2>
             <div class="grille grille2">
                 <input type="text" id="num" placeholder="Numéro de Carte">
                 <input type="text" id="nom" placeholder="Nom sur la carte">
@@ -294,7 +294,7 @@
     <footer>
         <nav>
             <a href="panier.php">Acheter</a>
-            <a href="http://mmid20b02.mmi-troyes.fr/jeu/">Jeu en ligne</a>
+            <a href="http://127.0.0.1:8000/">Jeu en ligne</a>
             <a href="http://149.91.90.177/mascav/">Contact</a>
             <a href="#">Revenir au sommet</a>
         </nav>

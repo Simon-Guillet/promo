@@ -5,8 +5,8 @@ if (!isset($_GET['lang'])){
     $lang=$_GET['lang'];
 }
 
-$frHeader=["Jeu en ligne","Jeu physique","Nous contacter","Acheter","La Conquête du Monde à portée de nageoires","Essayer le jeu en ligne"];
-$enHeader=["Online Game","Physical Game","Contact Us","Purchase","World Domination within the Reach of your Fins","Try the online Game"];
+$frHeader=["Jeu en ligne","Jeu physique","Nous contacter","Acheter","La Conquête du Monde à portée de nageoire","Essayer le jeu en ligne"];
+$enHeader=["Online Game","Physical Game","Contact Us","Purchase","World Domination within the Reach of your Fin","Try the online Game"];
 
 $frSurface=['<h3>Plutôt requin ou dauphin ? Choisis ton camp !</h3>
             <p>Les requins et les dauphins, après s’être débarrassé de l’espèce humaine qui polluait les océans, se livrent une guerre sans merci pour le contrôle de la Terre et la survie de leur espèce !
@@ -91,7 +91,7 @@ if ($lang==="en") {
             <i class="fa fa-bars"></i>
         </a>
         <nav class="topnav" id="myTopnav">
-            <a href="http://mmid20b02.mmi-troyes.fr/jeu/"><?php echo $header[0]?></a>
+            <a href="http://127.0.0.1:8000/"><?php echo $header[0]?></a>
             <a href="index.php"><?php echo $header[1]?></a>
             <a href="http://149.91.90.177/mascav/"><?php echo $header[2]?></a>
             <a href="panier.php" class="button"><?php echo $header[3]?></a>
@@ -190,7 +190,7 @@ if ($lang==="en") {
     <footer>
         <nav>
             <a href="panier.php"><?php echo $footer[0]?></a>
-            <a href="http://mmid20b02.mmi-troyes.fr/jeu/"><?php echo $footer[1]?></a>
+            <a href="http://127.0.0.1:8000/"><?php echo $footer[1]?></a>
             <a href="http://149.91.90.177/mascav/"><?php echo $footer[2]?></a>
             <a href="#"><?php echo $footer[3]?></a>
         </nav>

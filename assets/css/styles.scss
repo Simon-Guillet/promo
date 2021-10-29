@@ -352,6 +352,11 @@ body{
         #tel{
           grid-column: 2 / 4;
         }
+        @media (max-width: 800px) {
+          *{
+            grid-column: 1 / -1 !important;
+          }
+        }
       }
       .grille2{
         display: grid;
@@ -362,6 +367,11 @@ body{
         }
         #nom{
           grid-column: 1 / 3;
+        }
+        @media (max-width: 800px) {
+          *{
+            grid-column: 1 / -1 !important;
+          }
         }
       }
       .button{
